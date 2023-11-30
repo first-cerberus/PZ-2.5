@@ -9,6 +9,12 @@ import passes.StudentPass;
 
 import java.time.YearMonth;
 
+/** In this class implemented logic of entry permission
+ *   @throws SchoolPassOverdueException         If a SchoolPass is overdue.
+ *   @throws SchoolPassTripFinishedException    If a SchoolPass has no remaining trips.
+ *   @throws StudentPassOverdueException        If a StudentPass is overdue.
+ *   @throws RegularPassNotEnoughMoneyException If a RegularPass doesn't have enough money for the fare.
+ */
 public class Turnstile {
     public void validateEntryPermission(MetroPass pass) throws SchoolPassOverdueException, SchoolPassTripFinishedException,
             StudentPassOverdueException, RegularPassNotEnoughMoneyException {
